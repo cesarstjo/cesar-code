@@ -1,21 +1,3 @@
-# Créé par elevessi, le 10/10/2024 en Python 3.7
-def codage():
-    txt=input("entrez une phrase")
-    txt=[]
-    global code
-    global num
-    for letter in txt:
-        num=ord(letter)
-    []=txt
-    code=str.upper(txt)
-    return code,num
-codage()
-print(code)
-print(num)
-
-
-
-
 #####DECODAGE######
 def cesar_decode(message, decalage):
     resultat = ""
@@ -39,7 +21,8 @@ print("Le message décodé est :", message_decode)
 
 
 
-#####CODAGE######
+# Créé par quent, le 13/11/2024 en Python 3.7
+####CODAGE####
 def cesar_encode(message, decalage):
     resultat = ""
     for lettre in message:
@@ -56,9 +39,9 @@ def cesar_encode(message, decalage):
     return resultat
 
 print("=== Encodeur du chiffrement de César ===")
-message_clair = input("Entrez le message à encoder : ")
+message=input("Entrez le message à encoder : ")
 decalage = int(input("Entrez le décalage pour l'encodage : "))
-message_code = cesar_encode(message_clair, decalage)
-print("Le message encodé est :", message_code)
+print(cesar_encode(message, decalage))
+
 
 
